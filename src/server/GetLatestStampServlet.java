@@ -18,7 +18,6 @@ public class GetLatestStampServlet extends HttpServlet{
         Stamp stamp = new Stamp(null, null, null);
         try {
 			stamp = connection.get_latest_stamp(bathroom);
-            System.out.println(stamp.timeDiff);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
